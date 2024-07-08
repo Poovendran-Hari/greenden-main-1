@@ -1,0 +1,46 @@
+<style>
+    .main-block{
+        display: grid;
+        grid-template-rows: 1fr 20fr 1fr;  
+    }
+    .Header{
+        background-color: black;
+        color: white;
+        margin: 2px;
+        padding: 5px;
+
+    }
+    .Medium{
+        
+        color: black;
+        margin: 2px;
+        display: grid;
+        padding: 5px;
+        grid-template-columns: 2fr 8fr;
+    }
+    .Footer{
+        background-color: blue;
+        color: white;
+        margin: 2px;
+        padding: 5px;
+    }
+    .Medium__s1{
+        background-color: aquamarine;
+    }
+    .Medium__s2{
+        background-color: green;
+    }
+</style>
+<div class="main-block">
+    <div class="header">Header</div>
+    <div class="Medium">
+        <div class="Medium__s1"></div>
+        <div class="Medium__s2">
+            <div class="s1"></div>
+            <div class="s2"></div>
+            <div class="s3"></div>
+        </div>
+    </div>
+    <div class="Footer">Footer</div>
+
+</div>
