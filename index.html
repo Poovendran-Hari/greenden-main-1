@@ -11,6 +11,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <!--Tailwindcss CDN-->
 <script src="https://cdn.tailwindcss.com"></script>
@@ -31,7 +34,7 @@
     <!--Responsive Navbar-->
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-10 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -48,6 +51,17 @@
             </li>
         </ul>
     </nav>
+    <!--Side Navbar-->
+    <section id="sidenav" class="bg-green-100 fixed right-0 text-center transition-all duration-1000 top-0 z-20" style="height: 100vh; width: 50%; right: -50%;" >
+        <div id="closenav" class="text-right cursor-pointer p-6">
+            <p><i class="fa-solid fa-x" style="color: #000000;"></i></p>
+        </div>
+        <ul class="flex flex-col text-gray-600 gap-10 ">
+            <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
+            <li><a class="hover:underline hover:text-black" href="product.html">Products</a></li>
+            <li><a class="hover:underline hover:text-black" href="contact.html">Contact</a></li>
+        </ul>
+    </section>
     <!--Header Section-->
     <section class="bg-green-100 p-4 flex justify-center">
         <div>
@@ -160,17 +174,20 @@
     <!--News Letter-->
     <section class="text-center">
         <h1 class="text-3xl font-bold">Join Our News Letter</h1>
-        <p class="text-xl font-semibold mt-2 mb-2">Sign up for our email newspaper to get exclusive discounts, updates ,and more
+        <p class="text-xl font-semibold mt-2 mb-2">Sign up for our email newspaper to get exclusive discounts, updates
+            ,and more
         </p>
-        <input  class="border border-black rounded w-1 mt-3 mb-3 p-3" type="text" style="width: 80%;"><br>  
-        <button class="bg-black text-white font-bold text-2xl p-2 m-1 rounded">Subscribe Now</button>
+        <input class="border border-black rounded w-1 mt-3 mb-3 p-3" type="text" style="width: 80%;"><br>
+        <button class="bg-black text-white font-bold text-2xl p-4 mb-5 rounded">Subscribe Now</button>
     </section>
     <!--Footer-->
-    <section class="bg-green-100 p-4"> 
+    <section class="bg-green-100 p-4">
         <h1 class="font-bold text-3xl mt-2 mb-3">Greenden</h1>
-        <p class="mt-2 mb-3">The standard chunk of lorem ipsum used since 11500 is reproduced below for those intrest.</p>
+        <p class="mt-2 mb-3">The standard chunk of lorem ipsum used since 11500 is reproduced below for those intrest.
+        </p>
         <p class="mt-2 mb-3">@2024 Greenday.com</p>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
